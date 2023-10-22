@@ -1,10 +1,8 @@
 package me.dio.domain.model;
 
-import lombok.Data;
+import jakarta.persistence.Entity;
 
-@Data
-public class News {
-  private Long id;
-  private String icon;
-  private String description;
+@Entity(name = "tb_news")
+public class News extends BaseItem {
+
 }
